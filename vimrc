@@ -159,7 +159,7 @@ set ffs=unix,dos,mac
 set rulerformat=%39(%#Tabline#\ %t\ %m\ %8(%l:%c%V%)\ (%L\ Lines)\ %4p%%%)
 
 " Line number colours
-highlight LineNr ctermbg=Black ctermfg=DarkGrey guifg=#808080 cterm=NONE gui=NONE
+highlight LineNr ctermbg=000 ctermfg=144 guifg=#808080 cterm=NONE gui=NONE
 highlight ModeMsg term=underline ctermfg=236 ctermbg=144 guifg=#333333 guibg=#c2bfa5 
 set cursorline
 set cursorlineopt=number
@@ -194,6 +194,9 @@ map <leader>w <C-w>w
 " Toggle Comments
 nnoremap <leader>/ :call ToggleComment()<cr>
 vnoremap <leader>/ :call ToggleComment()<cr>
+
+" Toggle Line number
+map <leader>- :set number! relativenumber!<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
